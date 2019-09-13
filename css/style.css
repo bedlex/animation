@@ -1,0 +1,163 @@
+body{
+  background-color: #000;
+font-family: 'Arimo', sans-serif;
+}
+/**header**/
+.background__picture{
+  background-image: url("../img/background_img.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 600px;
+
+
+}
+
+
+.head{
+  margin-top: 270px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.Intro{
+  background-color: #44526D;
+  padding: 3px 3px;
+}
+
+.head h1{
+  position: absolute;
+  top:0px;
+  left:25px;
+  text-transform: uppercase;
+  font-size: 28px;
+  animation: 2s slide__h1 ease;
+}
+
+.head p{
+  position: absolute;
+  top:80px;
+  left:125px;
+  font-size: 14px;
+  animation: 2s slide__p ease;
+
+  width:50%;
+
+}
+
+.head a{
+  position: absolute;
+  top:140px;
+  left: 110px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #c6c6c6;
+  background-color: #1c1c1c;
+  padding: 10px;
+  border: 2px solid  #c6c6c6;
+  clip-path: circle(12% at 12% 50%);
+  transition: clip-path .5s ease-in-out;
+  
+}
+.head a:hover{
+  content: "";
+  clip-path: circle(100%);
+  color: #000;
+  background-color:#fe7300;
+  border-color: #000;
+}
+/**Animation**/
+@keyframes slide__h1 {
+  0%{top:-310px}
+  100%{top:0px}
+}
+@keyframes slide__p {
+  0%{left:-646px}
+    100%{left:125px}
+
+}
+
+
+
+/**main content**/
+.container{
+  background-color: #fff;
+  padding-bottom: 20px;
+
+}
+.first__wrapper{
+  width:100%;
+  margin-top: 8px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.first__wrapper h2{
+  text-transform: uppercase;
+}
+.paragraph__content{
+  font-size: 11px;
+}
+.sign__content{
+  margin-top: -10px;
+  font-size: 11px;
+  color: #c3c7c9;
+}
+.sector{
+  margin-top: 15px;
+  max-width: 99%;
+  border: 2px solid #e5e5e5;
+  border-radius: 20px;
+  padding-bottom: 15px;
+}
+.advertise__picture{
+  width:100%;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+.sector h4{
+  margin-left: 3%;
+  font-size: 14px;
+
+}
+
+.sector p{
+  margin-top: 6%;
+  margin-left: 3%;
+  ;
+  font-size: 10px;
+}
+/**button link**/
+.link_btn{
+  margin-left: 4%;
+  padding:3px 8px;
+  text-decoration: none;
+  color:#fff;
+  background-color:#000;
+  border: 1px solid #000;
+  border-radius: 3px;
+  transition: background-color  0.3s linear;
+  transition: color  0.3s linear;
+  transition:  0.3s linear;
+}
+
+.link_btn:hover{
+  content: "";
+  text-decoration: none;
+  color:#000;
+  background-color: #fe7300;
+}
+footer{
+
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  background-color: #959595;
+}
+footer p{
+  padding-top: 18px;
+  font-size: 12px;
+  color: #ccc;
+}
